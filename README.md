@@ -32,12 +32,6 @@ LoRA 在本项目中主要用于质量修复；推理加速来自剪枝和跳步
 
 表中 LPIPS 和 PSNR 衡量与对应 Full SDXL 参考图的差异，并不等同于人类主观画质。结果说明本次实验中的跳步感知续训在这些配对指标上有一定改善，但不同指标和图片的表现不完全一致，也不能据此声称方法普遍优于普通续训。
 
-![普通续训与跳步感知续训的 LPIPS 对比](results/continuation_lpips.png)
-
-OBS 30% 的真实生成图示例：从左到右为 Stage1、普通续训 500 步、跳步感知续训。该对比图为 20 个提示词的拼接图，点击可查看原图。
-
-[![OBS 30% 生成图片对比](results/obs30_continuation_grid20.jpg)](results/obs30_continuation_grid20.jpg)
-
 ## 实验局限
 
 - 部分训练 prompt 与评测 prompt 重叠，评测结果不能视为完全独立测试集上的泛化结果。

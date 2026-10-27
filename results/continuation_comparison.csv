@@ -1,0 +1,7 @@
+pruning_percent,method,num_images,lpips_to_full,psnr_to_full,avg_time_seconds,skip_rate_percent
+20,ordinary_continuation,100,0.3497457,19.6256,2.7230,48.59375
+20,skip_aware_latent_only,100,0.3347593,19.7322,2.7319,48.375
+30,ordinary_continuation,100,0.3833759,18.8167,2.7307,48.65625
+30,skip_aware_latent_only,100,0.3801619,18.8756,2.7291,48.75
+40,ordinary_continuation,100,0.4239510,18.2790,2.7307,48.71875
+40,skip_aware_latent_only,100,0.4152176,18.3335,2.7510,48.3125

@@ -58,6 +58,5 @@ LoRA 在本项目中主要用于质量修复；推理加速来自剪枝和跳步
 - [AdaptiveDiffusion](https://github.com/UniModal4Reasoning/AdaptiveDiffusion)
 - [EcoDiff](https://github.com/YaNgZhAnG-V5/EcoDiff)
 
-本文件是公开介绍草稿，不代表仓库已发布；实际分发前仍需确认各上游代码、模型、图片和协作成果的授权。
 
 本地候选目录的文件说明及使用限制见 [USAGE.md](USAGE.md)，上游来源与授权检查见 [THIRD_PARTY.md](THIRD_PARTY.md)，实验汇总见 [results/continuation_comparison.csv](results/continuation_comparison.csv)。

@@ -36,6 +36,12 @@ LoRA 在本项目中主要用于质量修复；推理加速来自剪枝和跳步
 
 图中百分比表示相对于 OBS + Skip 的 LPIPS 降幅。Stage1 和 Stage2 使用的推理 LoRA scale 分别为 1.0 和 0.6，且不同剪枝比例的训练配置不完全一致，因此这张图不是严格控制变量的消融对比。LPIPS 越低仅表示与 Full SDXL 参考图的感知距离更小，不代表所有维度的画质都更好。
 
+## 生成图片示例
+
+下图为 OBS 30% 剪枝下的定性对比，从左到右依次为 Full SDXL、OBS 不跳步、OBS + Skip、Stage1 LoRA + Skip、Stage2 + Skip。图片仅展示部分提示词，不能单独代表整体效果。
+
+![OBS 30% 不同方法生成图片对比](results/obs30_qualitative_comparison.png)
+
 ## 实验局限
 
 - 部分训练 prompt 与评测 prompt 重叠，评测结果不能视为完全独立测试集上的泛化结果。

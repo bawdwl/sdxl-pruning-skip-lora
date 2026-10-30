@@ -2,8 +2,6 @@
 
 **技术报告：[Skip-Aware LoRA Continuation for Pruned Diffusion Models（PDF）](paper/skip_aware_lora_continuation.pdf)**
 
-作者：Xianwei Wu、Yupeng Wu、Baoqian Tu。报告尚未经同行评审；本仓库提供插图压缩后的网页阅读版，保留全部36页及原始文字。
-
 **面向剪枝扩散模型的跳步感知 LoRA 续训练**
 
 SDXL 主实验 · OBS 10%–60% · 轨迹级蒸馏 · SD1.5 / SD2.1 补充定性结果

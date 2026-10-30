@@ -1,0 +1,14 @@
+<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="prune" value="Structured pruning + Stage1 LoRA repair" style="rounded=0;whiteSpace=wrap;fillColor=#dae8fc;" vertex="1" parent="1"><mxGeometry x="20" y="160" width="210" height="70" as="geometry"/></mxCell>
+<mxCell id="anchor" value="Same prompt + anchor latent" style="whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="270" y="160" width="170" height="70" as="geometry"/></mxCell>
+<mxCell id="teacher" value="Frozen full teacher: fresh noise prediction at every local update" style="whiteSpace=wrap;fillColor=#dae8fc;" vertex="1" parent="1"><mxGeometry x="490" y="60" width="240" height="80" as="geometry"/></mxCell>
+<mxCell id="student" value="Pruned student: trainable LoRA; anchor noise reused across skipped updates" style="whiteSpace=wrap;fillColor=#ffe6cc;" vertex="1" parent="1"><mxGeometry x="490" y="250" width="240" height="80" as="geometry"/></mxCell>
+<mxCell id="loss" value="Endpoint latent MSE; update student LoRA only" style="whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="790" y="160" width="210" height="70" as="geometry"/></mxCell>
+<mxCell id="inference" value="Inference: adapted pruned student + Adaptive Skip. No teacher." style="whiteSpace=wrap;fillColor=#d5e8d4;" vertex="1" parent="1"><mxGeometry x="1060" y="160" width="220" height="70" as="geometry"/></mxCell>
+<mxCell id="e1" edge="1" source="prune" target="anchor" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e2" edge="1" source="anchor" target="teacher" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e3" edge="1" source="anchor" target="student" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e4" edge="1" source="teacher" target="loss" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e5" edge="1" source="student" target="loss" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e6" edge="1" source="loss" target="inference" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+</root></mxGraphModel>
